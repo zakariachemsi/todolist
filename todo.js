@@ -90,7 +90,7 @@ function updateStats() {
 // Render Tasks
 function renderTasks() {
     if (tasks.length === 0) {
-        tasksContainer.innerHTML = '<div class="empty-message"><div class="empty-icon"></div><h2>No tasks yet</h2><p>Add a task to get started!</p></div>';
+        tasksContainer.innerHTML = '<div class="empty-message"><h2>No tasks yet</h2><p>Add a task to get started!</p></div>';
         return;
     }
 
@@ -135,4 +135,5 @@ taskInput.addEventListener('keypress', function(e) {
 });
 
 // Initialize - Load tasks from local storage
+
 loadTasks();
